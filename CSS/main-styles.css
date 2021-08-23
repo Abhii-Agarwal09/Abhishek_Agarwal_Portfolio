@@ -1,6 +1,118 @@
 /* CSS RESET AND GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #3D59BF;
+    --secondary-color: #F2A32C;
+    --text-color: #070A0F;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+}
+.navbar__container {
+    width: calc(100% - 240px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__logo {
+    position: relative;
+    bottom: 4px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--primary-color);
+}
+
+.navbar__logo-left {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.navbar__logo-right {
+    font-size: 32px;
+}
+
+.navbar__logo-right-first {
+    position: relative;
+    left: -14px;
+    top: 8px;
+}
+
+.navbar__logo-right-last {
+    position: relative;
+    top: 4px;
+}
+
+.navbar__list {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.navbar__link:hover,
+.navbar__link:active,
+.navbar__link:focus {
+    color: var(--primary-color);
+}
+
+.navbar__item {
+    position: relative;
+    min-width: 150px;
+}
+ 
+.navbar__item:hover:not(.btn-work):before,
+.navbar__item:active:not(.btn-work):before, 
+.navbar__item:focus:not(.btn-work):before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+}
+
+.btn-work .navbar__link {
+    color: #fff;
+}
+/* NAVBAR STYLING ENDS */
