@@ -14,20 +14,26 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 :root {
     --primary-color: #3D59BF;
     --secondary-color: #F2A32C;
     --text-color: #070A0F;
+    --text-color-faded: rgba(7, 10, 15, 0.85);
 }
 
 /* NAVBAR STYLING STARTS */
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16vh;
+    height: 12vh;
+    z-index: 2;
 }
 .navbar__container {
     width: calc(100% - 240px);
@@ -38,6 +44,7 @@ body {
 }
 
 .navbar__logo {
+    border: 2px solid black;
     position: relative;
     bottom: 4px;
     font-family: 'Playfair Display', serif;
@@ -118,11 +125,92 @@ body {
 
 .btn {
     background-color: var(--primary-color);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
 }
 
 .btn-work .navbar__link {
     color: #fff;
 }
 /* NAVBAR STYLING ENDS */
+
+
+.main__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HERO STYLING STARTS */
+.hero {
+    width: calc(100% - 240px);
+}
+.hero__container {
+    border: 2px solid blue;
+    display: flex;
+}
+
+.hero__info {
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero__info-heading-container {
+    border: 2px solid cyan;
+}
+
+.hero__info-heading-container .info__heading-big-orange {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.hero__info-heading-container .info__heading-small-black {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.hero__info-heading-container .info__heading-big-blue {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero__info-about-text .info__about-heading {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.hero__info-about-text .info__about-text {
+    font-size: 16px;
+    color: var(--text-color-faded);
+}
+
+.cta__btn {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cta__btn-resume {
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+/* HERO STYLING ENDS */
+
+/* SKILLS STYLING STARTS */
+/* SKILLS STYLING ENDS */
+
+/* EDUCATION STYLING STARTS */
+/* EDUCATION STYLING ENDS */
