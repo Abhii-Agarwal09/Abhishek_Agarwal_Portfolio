@@ -1,0 +1,106 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.contact__container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    max-height: 550px;
+    border-radius: 60px;
+}
+
+.contact__info {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.contact__image {
+    height: 40%;
+}
+
+.contact__image img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact__personal-info {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.personal-info {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.contact__form {
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form__fields {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+.form__fields-container label {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.form__fields-container input, textarea {
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 600;
+    
+}
+
+textarea {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}

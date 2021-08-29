@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./CSS/skills-styles.css">
     <link rel="stylesheet" href="./CSS/education-styles.css">
     <link rel="stylesheet" href="./CSS/footer-styles.css">
+    <link rel="stylesheet" href="./CSS/contact-styles.css">
 </head>
 
 <body>
@@ -146,6 +147,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="contact">
+            <div class="contact__heading heading">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__image">
+                        <img src="./Assets/Linked in dp-3.png" alt="contact dp">
+                    </div>
+                    <div class="contact__personal-info">
+                        <p class="name personal-info">Abhishek Agarwal</p>
+                        <p class="role personal-info">Full Stack Developer and Designer</p>
+                        <p class="email personal-info">abhishek.agarwal.work20@gmail.com</p>
+                    </div>
+                </div>
+                <form class="contact__form">
+                    <div class="form__fields">
+                        <div class="name-container form__fields-container">
+                            <label for="name" class="form-labels">Name: </label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="email-container form__fields-container">
+                            <label for="email" class="form-labels">Email: </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="message-container form__fields-container">
+                            <label class="form-labels">Message: </label>
+                            <textarea name="message" id="message" cols="40" rows="6" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form__btn">
+                        <button class="btn cta__btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
         <!-- EDUCATION SECTION ENDS -->
     </main>
 
@@ -153,7 +193,10 @@
     <footer class="footer">
         <section class="footer__left">
             <div class="footer__heading">
-                <p>Abhishek Agarwal</p>
+                <p>
+                    <i class="fas fa-copyright"></i>
+                    Abhishek Agarwal
+                </p>
             </div>
         </section>
         <section class="footer__middle">
@@ -179,11 +222,6 @@
                     </a>
                 </li>
             </ul>
-        </section>
-        <section class="footer__right">
-            <div class="footer__contact">
-                <button class=" cta__btn cta__btn-contact">Contact Me</button>
-            </div>
         </section>
     </footer>
     <!-- FOOTER ENDS -->

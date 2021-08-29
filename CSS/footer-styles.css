@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .border {
+    border: 2px solid red;
+} */
+
+
+.footer__middle {
+    width: 20%;
+}
+
+.footer__heading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.footer__social-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab,
+.fas {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-btn {
+    background-color: var(--secondary-color);
+}
