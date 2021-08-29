@@ -1,0 +1,105 @@
+.skills {
+    margin-top: 12rem;
+    width: calc(100% - 240px);
+    height: 35rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.skills__heading h1 {
+    text-align: center;
+}
+
+.skills__cards-container {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 8rem;
+}
+
+.skills__cards-container .skill__card {
+    height: 80%;
+    width: 28%;
+    /* border: 2px solid cyan; */
+}
+
+.skill__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1), 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.skill__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    border-top-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0;
+}
+
+.skill__card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+}
+
+.skill__card-heading {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.skill__card-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 90%;
+}
+
+.skill__card-btn {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.skill__card-btn:hover {
+    background-color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.skill__card-btn:hover > a,
+.skill__card-btn:hover > i {
+    color: #fff;
+}
+
+.skill__card-btn a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+    
+.skill__card-btn i {
+    color: var(--primary-color);
+}
