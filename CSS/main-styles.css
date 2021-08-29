@@ -29,6 +29,10 @@ body {
     color: var(--primary-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* NAVBAR STYLING STARTS */
 .navbar {
     position: sticky;
