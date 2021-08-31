@@ -26,13 +26,13 @@
             </div>
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Home</a>
+                    <a href="#home" class="navbar__link">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Education</a>
+                    <a href="#skills" class="navbar__link">Skills</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Skills</a>
+                    <a href="#education" class="navbar__link">Education</a>
                 </li>
                 <li class="navbar__item btn btn-work">
                     <a href="#" class="navbar__link">View work</a>
@@ -44,7 +44,7 @@
 
     <main class="main__body">
         <!-- HERO SECTION STARTS -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero__container">
                 <div class="hero__info">
                     <div class="hero__info-heading-container">
@@ -61,7 +61,7 @@
                         </p>
                     </div>
                     <div class="hero__info-cta">
-                        <button class=" cta__btn cta__btn-contact">Contact Me</button>
+                        <button class=" cta__btn cta__btn-contact" onclick="window.location.href='#contact'">Contact Me</button>
                         <button class="cta__btn cta__btn-resume">Resume</button>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
         <!-- HERO SECTION ENDS -->
 
         <!-- SKILLS SECTION STARTS -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills__container">
                 <div class="skills__heading heading">
                     <h1>SKILLS</h1>
@@ -97,7 +97,7 @@
                         </p>
                         <p class="skill__card-text">
                             I specialize in designing attractive looking responsive web apps, mobile apps offering a
-                            great user experience. 
+                            great user experience.
                         </p>
                         <div class="skill__card-btn">
                             <a href="#">View Work</a>
@@ -110,7 +110,7 @@
         <!-- SKILLS SECTION ENDS -->
 
         <!-- EDUCATION SECTION STARTS -->
-        <section class="education">
+        <section class="education" id="education">
             <div class="education__container">
                 <div class="education__heading heading">
                     <h1>EDUCATION</h1>
@@ -136,7 +136,7 @@
                             <span>CBSE Board</span>
                         </p>
                         <p class="education__card-text">
-                            <span>Pinewood School</span> 
+                            <span>Pinewood School</span>
                             <span>Saharanpur, Uttar Pradesh</span>
                             <span class="year">2020</span>
                         </p>
@@ -147,46 +147,68 @@
                 </div>
             </div>
         </section>
+        <!-- EDUCATION SECTION ENDS -->
 
-        <section class="contact">
-            <div class="contact__heading heading">
-                <h1>Contact Me</h1>
+        <!-- CONTACT SECTION STARTS -->
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h1>CONTACT</h1>
             </div>
-            <div class="contact__container">
+            <div class="contact__content">
                 <div class="contact__info">
-                    <div class="contact__image">
-                        <img src="./Assets/Linked in dp-3.png" alt="contact dp">
+                    <div class="info__img">
+                        <img src="./Assets/Linked in dp-3.png" alt="abhishek image">
                     </div>
-                    <div class="contact__personal-info">
-                        <p class="name personal-info">Abhishek Agarwal</p>
-                        <p class="role personal-info">Full Stack Developer and Designer</p>
-                        <p class="email personal-info">abhishek.agarwal.work20@gmail.com</p>
+                    <div class="personal">
+                        <p class="personal__name personal__info">Abhishek Agarwal</p>
+                        <p class="personal__email personal__info">abhishek.agarwal.work20@gmail.com</p>
+                        <p class="personal__role personal__info">Full Stack Web Developer</p>
                     </div>
+                    <ul class="social__list info-list">
+                        <li class="social__link">
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social__link">
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__link">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social__link">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <form class="contact__form">
-                    <div class="form__fields">
-                        <div class="name-container form__fields-container">
-                            <label for="name" class="form-labels">Name: </label>
-                            <input type="text" required>
+                <div class="contact-form__container">
+                    <form class="form">
+                        <div class="form__field name">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" autocomplete="off">
                         </div>
-
-                        <div class="email-container form__fields-container">
-                            <label for="email" class="form-labels">Email: </label>
-                            <input type="email" name="email" id="email" required>
+                        <div class="form__field email">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" autocomplete="off">
                         </div>
-
-                        <div class="message-container form__fields-container">
-                            <label class="form-labels">Message: </label>
-                            <textarea name="message" id="message" cols="40" rows="6" required></textarea>
+                        <div class="form__field message">
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" cols="30" rows="6"></textarea>
                         </div>
-                    </div>
-                    <div class="form__btn">
-                        <button class="btn cta__btn">Send</button>
-                    </div>
-                </form>
+                        <div class="form__btn cta__btn">
+                            <a href="#">Send</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
-        <!-- EDUCATION SECTION ENDS -->
+        <!-- CONTACT SECTION ENDS -->
     </main>
 
     <!-- FOOTER STARTS -->
@@ -200,7 +222,7 @@
             </div>
         </section>
         <section class="footer__middle">
-            <ul class="footer__social-list">
+            <ul class="social__list">
                 <li class="footer__link">
                     <a href="#">
                         <i class="fab fa-github"></i>
