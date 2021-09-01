@@ -28,7 +28,7 @@
 .education__cards-container .education__card {
     height: 80%;
     width: 28%;
-    /* border: 2px solid cyan; */
+    max-width: 371px;
 }
 
 .education__card {
