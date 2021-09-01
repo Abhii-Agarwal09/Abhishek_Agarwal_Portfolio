@@ -1,0 +1,22 @@
+h1 {
+    width: calc(100% - 240px);
+    max-width: 1920px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid red;
+    margin-top: 5rem;
+}
+
+.logo-work {
+    transition: all 0.5s ease;
+    z-index: 65;
+}
+
+.work__container {
+    border: 2px solid red;
+    width: calc(100% - 240px);
+    margin: 3rem auto;
+    max-width: 1920px;
+    height: 20rem;
+    display: flex;
+}
