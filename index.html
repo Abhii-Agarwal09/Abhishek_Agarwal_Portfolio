@@ -19,22 +19,22 @@
 
 <body>
     <!-- NAVBAR STARTS -->
-    <header class="navbar">
+    <header class="navbar max-width">
         <nav class="navbar__container">
             <div class="navbar__logo">
-                <img src="./Assets/logo-name-svg.svg" alt="logo">
+                <img src="./Assets/logo-name-normal.svg" alt="logo" class="logo-item">
             </div>
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__link">Home</a>
+                    <a href="#" class="navbar__link" id="home-btn">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#skills" class="navbar__link">Skills</a>
+                    <a href="#" class="navbar__link" id="skills-btn">Skills</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#education" class="navbar__link">Education</a>
+                    <a href="#" class="navbar__link" id="education-btn">Education</a>
                 </li>
-                <li class="navbar__item btn btn-work">
+                <li class="navbar__item btn btn-work btn-hover">
                     <a href="#" class="navbar__link">View work</a>
                 </li>
             </ul>
@@ -42,7 +42,7 @@
     </header>
     <!-- NAVBAR ENDS -->
 
-    <main class="main__body">
+    <main class="main__body max-width">
         <!-- HERO SECTION STARTS -->
         <section class="hero" id="home">
             <div class="hero__container">
@@ -61,8 +61,8 @@
                         </p>
                     </div>
                     <div class="hero__info-cta">
-                        <button class=" cta__btn cta__btn-contact" onclick="window.location.href='#contact'">Contact Me</button>
-                        <button class="cta__btn cta__btn-resume">Resume</button>
+                        <button class=" cta__btn cta__btn-contact btn-hover" onclick="window.location.href='#contact'">Contact Me</button>
+                        <button class="cta__btn cta__btn-resume btn-hover">Resume</button>
                     </div>
                 </div>
                 <div class="hero__image">
@@ -201,7 +201,7 @@
                             <label for="message">Message: </label>
                             <textarea name="message" id="message" cols="30" rows="6"></textarea>
                         </div>
-                        <div class="form__btn cta__btn">
+                        <div class="form__btn cta__btn btn-hover">
                             <a href="#">Send</a>
                         </div>
                     </form>
@@ -247,6 +247,8 @@
         </section>
     </footer>
     <!-- FOOTER ENDS -->
+
+    <script src="./Js/app.js"></script>
 </body>
 
 </html>

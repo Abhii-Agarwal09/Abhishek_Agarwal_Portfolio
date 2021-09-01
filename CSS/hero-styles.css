@@ -75,7 +75,6 @@
 }
 
 .hero__info-cta {
-    
     width: 70%;
 }
 
@@ -90,6 +89,7 @@
     height: 2.5rem;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .cta__btn-contact {

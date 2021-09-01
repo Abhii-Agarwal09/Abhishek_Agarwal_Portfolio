@@ -39,4 +39,16 @@ a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.max-width {
+    max-width: 1920px;
+}
+
+.btn-hover:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
