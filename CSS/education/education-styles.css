@@ -26,9 +26,12 @@
 }
 
 .education__cards-container .education__card {
-    height: 80%;
+    /* height: 80%;
     width: 28%;
-    max-width: 371px;
+    max-width: 371px; */
+    height: 90%;
+    width: 40%;
+    max-width: 400px;
 }
 
 .education__card {

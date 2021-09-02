@@ -26,9 +26,9 @@
 }
 
 .skills__cards-container .skill__card {
-    height: 80%;
-    width: 28%;
-    max-width: 371px;
+    height: 90%;
+    width: 40%;
+    max-width: 400px;
 }
 
 .skill__card {

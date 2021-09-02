@@ -92,3 +92,11 @@ if (body.id !== 'work-page') {
     });
 }
 
+
+// navbar animation 
+const hamburger = document.querySelector('.navbar-hamburger__container');
+
+hamburger.addEventListener('click', () => {
+    const navList = document.querySelector('.navbar__list');
+    navList.classList.toggle('active');
+})
