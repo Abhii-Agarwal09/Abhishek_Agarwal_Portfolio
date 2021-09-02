@@ -1,0 +1,70 @@
+@media all and (max-width: 1200px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .education__cards-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .education__card {
+        width: 45%;
+    }
+
+    .education__card-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 1110px) {
+    .education__cards-container {
+        flex-direction: column;
+        border: 2px solid green;
+    }
+    .education__cards-container .education__card {
+        border: 2px solid red;
+        height: 40%;
+        width: 50%;
+    }
+
+    .education__card-heading {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 940px) {
+    .education__cards-container .education__card {
+        width: 55%;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .education__cards-container .education__card {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .education {
+        width: 80%;
+    }
+    .education__cards-container .education__card {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 620px) {
+    .education__card-heading {
+        font-size: 1.2rem;
+    }
+    .education__cards-container .education__card {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .education__cards-container .education__card {
+        width: 100%;
+    }
+}
