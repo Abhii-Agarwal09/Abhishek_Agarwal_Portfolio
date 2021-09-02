@@ -38,9 +38,9 @@ window.addEventListener('scroll', () => {
         navBtn.classList.add('nav-btn-scrolled');
 
         if (body.id === 'work-page') {
-            logoWork.src = "../Assets/logo-name-scrolled.svg"
+            logoWork.src = "../Assets/Logo-name-scrolled.svg"
         } else {
-            logo.src = "./Assets/logo-name-scrolled.svg"
+            logo.src = "./Assets/Logo-name-scrolled.svg"
         }
 
     } else {
@@ -57,9 +57,9 @@ window.addEventListener('scroll', () => {
 
 
         if (body.id === 'work-page') {
-            logoWork.src = "../Assets/logo-name-normal.svg"
+            logoWork.src = "../Assets/Logo-name-normal.svg"
         } else {
-            logo.src = "./Assets/logo-name-normal.svg"
+            logo.src = "./Assets/Logo-name-normal.svg"
         }
 
         
