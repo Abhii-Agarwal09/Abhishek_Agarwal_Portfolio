@@ -9,7 +9,6 @@ const logoWork = document.querySelector('.logo-work')
 const homeBtn = document.querySelector('#home-btn');
 const skillsBtn = document.querySelector('#skills-btn');
 const educationBtn = document.querySelector('#education-btn');
-const contactBtn = document.querySelector('.cta__btn-contact');
 
 const body = document.getElementsByTagName('body')[0];
 console.log(body);
@@ -83,11 +82,6 @@ if (body.id !== 'work-page') {
     
     educationBtn.addEventListener('click', () => {
         window.scrollBy(0, 1440);
-        console.log(window.scrollY);
-    });
-    
-    contactBtn.addEventListener('click', () => {
-        window.scroll(0, 2170);
         console.log(window.scrollY);
     });
 }

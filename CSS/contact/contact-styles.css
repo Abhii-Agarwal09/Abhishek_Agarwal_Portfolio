@@ -90,10 +90,7 @@
     border: 2px solid var(--primary-color);
 }
 
-.form__btn {
-    background-color: var(--secondary-color);
-}
-
 .form__btn a {
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }

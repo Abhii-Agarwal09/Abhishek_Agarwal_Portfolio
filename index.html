@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./CSS/navbar/navbar-styles.css">
     <link rel="stylesheet" href="./CSS/navbar/navbar-responsive-styles.css">
     <link rel="stylesheet" href="./CSS/hero/hero-styles.css">
-    <link rel="stylesheet" href="./CSS/hero/hero-responsive-styles.css">
+    <!-- <link rel="stylesheet" href="./CSS/hero/hero-responsive-styles.css"> -->
     <link rel="stylesheet" href="./CSS/skills/skills-styles.css">
     <!-- <link rel="stylesheet" href="./CSS/skills/skills-responsive-styles.css"> -->
     <link rel="stylesheet" href="./CSS/education/education-styles.css">
@@ -38,8 +38,8 @@
                 <li class="navbar__item">
                     <a href="#" class="navbar__link" id="education-btn">Education</a>
                 </li>
-                <li class="navbar__item btn btn-work btn-hover">
-                    <a href="./HTML/work.html" class="navbar__link">View work</a>
+                <li class="navbar__item btn-work last">
+                    <a href="./HTML/work.html" class="navbar__link btn btn-hover">View work</a>
                 </li>
             </ul>
             <div class="navbar-hamburger__container">
@@ -68,9 +68,8 @@
                     </p>
                 </div>
                 <div class="hero__info-cta">
-                    <button class=" cta__btn cta__btn-contact btn-hover"
-                        onclick="window.location.href='#contact'">Contact Me</button>
-                    <button class="cta__btn cta__btn-resume btn-hover">Resume</button>
+                    <a href="#" class="btn btn-hover">Contact Me</a>
+                    <a href="#" class="btn btn-hover cta__btn-resume">Resume</a>
                 </div>
             </div>
             <div class="hero__image">
@@ -210,8 +209,8 @@
                             <label for="message">Message: </label>
                             <textarea name="message" id="message" cols="30" rows="6"></textarea>
                         </div>
-                        <div class="form__btn cta__btn btn-hover flex">
-                            <a href="#">Send</a>
+                        <div class="form__btn btn-hover flex">
+                            <a href="#" class="btn">Send</a>
                         </div>
                     </form>
                 </div>

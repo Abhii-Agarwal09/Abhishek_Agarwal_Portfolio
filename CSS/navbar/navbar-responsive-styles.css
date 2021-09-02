@@ -1,29 +1,3 @@
-.navbar {
-    /* border: 2px solid red; */
-}
-
-.navbar__container {
-    /* border: 2px solid blue; */
-}
-
-.navbar__logo {
-    /* border: 2px solid green; */
-}
-
-.navbar__list {
-    /* border: 2px solid brown; */
-}
-
-.navbar-hamburger__container {
-    /* border: 2px solid red; */
-    padding: 5px;
-    display: none;
-}
-
-.navbar-hamburger__container > i {
-    color: var(--primary-color);
-}
-
 .active {
     transform: translate(-2000px, 0);
     transition: all 0.5s ease;
