@@ -1,35 +1,35 @@
 .hero {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 88vh;
 }
 
 .hero__container {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     /* flex-wrap: wrap-reverse; */
     height: 100%;
     width: 100%;
 }
 
 .hero__info {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 50%;
 }
 
 .hero__info-heading-container {
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 
 .hero__info-about-text {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 80%;
 }
 
 .hero__info-cta {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .hero__image {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center;

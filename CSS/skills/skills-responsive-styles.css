@@ -1,17 +1,17 @@
 .skills {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .skills__container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .skills__heading {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .skills__cards-container {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 @media all and (max-width: 1200px) {
@@ -36,10 +36,10 @@
 @media all and (max-width: 1110px) {
     .skills__cards-container {
         flex-direction: column;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
     .skills__cards-container .skill__card {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 40%;
         width: 50%;
     }
