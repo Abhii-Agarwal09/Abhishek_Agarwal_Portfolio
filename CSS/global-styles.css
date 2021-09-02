@@ -41,8 +41,9 @@ a {
     align-items: center;
     margin-bottom: 5rem;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
+    border: 2px solid red;
 }
 
 .max-width {

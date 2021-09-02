@@ -1,9 +1,10 @@
 .hero {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     width: calc(100% - 240px);
     max-width: 2000px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .hero__container {
     display: flex;
@@ -93,7 +94,7 @@
 }
 
 .cta__btn-contact {
-    margin-right: 30px;
+    margin-right: 26px;
 }
 
 .cta__btn-resume {
@@ -101,3 +102,4 @@
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
 }
+
