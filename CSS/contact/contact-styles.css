@@ -1,26 +1,21 @@
-.contact {
+.contact .child-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 240px);
     min-height: 42rem;
-    margin-top: 5rem;
+    margin: 5rem auto;
 }
 
 .contact__content {
-    display: flex;
-    width: 80%;
+    align-items: stretch;
+    width: 100%;
     flex: 1;
     max-height: 530px;
-    justify-content: center;
 }
 
 .contact__info {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     width: 50%;
     position: relative;
     background-color: var(--primary-color);
@@ -58,18 +53,12 @@
 
 .contact-form__container {
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .form {
     height: 90%;
     width: 90%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 }
 
 .form__field {
@@ -102,9 +91,6 @@
 }
 
 .form__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--secondary-color);
 }
 

@@ -58,15 +58,26 @@ a {
     max-width: 1300px;
 }
 
-/* .max-width {
-    max-width: 1920px;
-} */
-
-/* .max-width-child {
-    max-width: 1680px;
-} */
+.card {
+    height: 400px;
+    width: 400px;
+    border: 2px solid green;
+}
 
 .btn-hover:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

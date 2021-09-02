@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./CSS/hero/hero-styles.css">
     <link rel="stylesheet" href="./CSS/hero/hero-responsive-styles.css">
     <link rel="stylesheet" href="./CSS/skills/skills-styles.css">
-    <link rel="stylesheet" href="./CSS/skills/skills-responsive-styles.css">
+    <!-- <link rel="stylesheet" href="./CSS/skills/skills-responsive-styles.css"> -->
     <link rel="stylesheet" href="./CSS/education/education-styles.css">
-    <link rel="stylesheet" href="./CSS/education/education-responsive-styles.css">
+    <!-- <link rel="stylesheet" href="./CSS/education/education-responsive-styles.css"> -->
     <link rel="stylesheet" href="./CSS/footer/footer-styles.css">
     <link rel="stylesheet" href="./CSS/contact/contact-styles.css">
 </head>
@@ -50,119 +50,121 @@
     <!-- NAVBAR ENDS -->
 
     <!-- <main class="main__body max-width"> -->
-        <!-- HERO SECTION STARTS -->
-        <section class="hero container" id="home">
-            <div class="hero__container child-container">
-                <div class="hero__info">
-                    <div class="hero__info-heading-container">
-                        <p class="info__heading-big-orange">WEB DESIGNER</p>
-                        <p class="info__heading-small-black">AND</p>
-                        <p class="info__heading-big-blue">FULL STACK DEVELOPER</p>
-                    </div>
-                    <div class="hero__info-about-text">
-                        <p class="info__about-heading">Hey there!</p>
-                        <p class="info__about-text">
-                            Fueled by passion for designing and building compelling and attractive websites, I have a
-                            deep desire to excel and continuously improve myself. Learn more about me by going through
-                            my work and resume.
-                        </p>
-                    </div>
-                    <div class="hero__info-cta">
-                        <button class=" cta__btn cta__btn-contact btn-hover" onclick="window.location.href='#contact'">Contact Me</button>
-                        <button class="cta__btn cta__btn-resume btn-hover">Resume</button>
-                    </div>
+    <!-- HERO SECTION STARTS -->
+    <section class="hero container flex" id="home">
+        <div class="hero__container child-container">
+            <div class="hero__info">
+                <div class="hero__info-heading-container">
+                    <p class="info__heading-big-orange">WEB DESIGNER</p>
+                    <p class="info__heading-small-black">AND</p>
+                    <p class="info__heading-big-blue">FULL STACK DEVELOPER</p>
                 </div>
-                <div class="hero__image">
-                    <img src="./Assets/hero-image-small.png" alt="hero-image">
+                <div class="hero__info-about-text">
+                    <p class="info__about-heading">Hey there!</p>
+                    <p class="info__about-text">
+                        Fueled by passion for designing and building compelling and attractive websites, I have a
+                        deep desire to excel and continuously improve myself. Learn more about me by going through
+                        my work and resume.
+                    </p>
+                </div>
+                <div class="hero__info-cta">
+                    <button class=" cta__btn cta__btn-contact btn-hover"
+                        onclick="window.location.href='#contact'">Contact Me</button>
+                    <button class="cta__btn cta__btn-resume btn-hover">Resume</button>
                 </div>
             </div>
-        </section>
-        <!-- HERO SECTION ENDS -->
-
-        <!-- SKILLS SECTION STARTS -->
-        <section class="skills container" id="skills">
-            <div class="skills__container child-container">
-                <div class="skills__heading heading">
-                    <h1>SKILLS</h1>
-                </div>
-                <div class="skills__cards-container">
-                    <div class="skill__card">
-                        <p class="skill__card-heading">
-                            FULL STACK DEVELOPMENT
-                        </p>
-                        <p class="skill__card-text">
-                            I bring my ideas to life through live websites developed using the MERN Stack.
-                        </p>
-                        <div class="skill__card-btn">
-                            <a href="#">View Work</a>
-                            <i class="fa fa-arrow-right fa-xs"></i>
-                        </div>
-                    </div>
-                    <div class="skill__card">
-                        <p class="skill__card-heading">
-                            UI/UX <br> DESIGN
-                        </p>
-                        <p class="skill__card-text">
-                            I specialize in designing attractive looking responsive web apps, mobile apps offering a
-                            great user experience.
-                        </p>
-                        <div class="skill__card-btn">
-                            <a href="#">View Work</a>
-                            <i class="fa fa-arrow-right fa-xs"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero__image">
+                <img src="./Assets/hero-image-small.png" alt="hero-image">
             </div>
-        </section>
-        <!-- SKILLS SECTION ENDS -->
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS -->
 
-        <!-- EDUCATION SECTION STARTS -->
-        <section class="education container" id="education">
-            <div class="education__container child-container">
-                <div class="education__heading heading">
-                    <h1>EDUCATION</h1>
-                </div>
-                <div class="education__cards-container">
-                    <div class="education__card move-up-transition">
-                        <p class="education__card-heading">
-                            <span class="degree">B.TECH</span>
-                            <span class="major">Computer Science Enginering</span>
-                        </p>
-                        <p class="education__card-text">
-                            <span class="clg">Vellore Institute of Technology</span>
-                            <span class="clg-loc">Vellore, Tamil Nadu</span>
-                            <span class="year">2020 - 2024</span>
-                        </p>
-                        <div class="education__card-gpa">
-                            <p>CGPA - 8.7</p>
-                        </div>
+    <!-- SKILLS SECTION STARTS -->
+    <section class="skills container" id="skills">
+        <div class="skills__container child-container flex-column">
+            <div class="skills__heading heading">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="skills__cards-container flex">
+                <div class="skill__card card flex-column">
+                    <p class="skill__card-heading">
+                        FULL STACK DEVELOPMENT
+                    </p>
+                    <p class="skill__card-text">
+                        I bring my ideas to life through live websites developed using the MERN Stack.
+                    </p>
+                    <div class="skill__card-btn">
+                        <a href="#">View Work</a>
+                        <i class="fa fa-arrow-right fa-xs"></i>
                     </div>
-                    <div class="education__card">
-                        <p class="education__card-heading">
-                            <span>CLASS 12TH</span>
-                            <span>CBSE Board</span>
-                        </p>
-                        <p class="education__card-text">
-                            <span>Pinewood School</span>
-                            <span>Saharanpur, Uttar Pradesh</span>
-                            <span class="year">2020</span>
-                        </p>
-                        <div class="education__card-percentage">
-                            <p>Percentage - 95.4%</p>
-                        </div>
+                </div>
+                <div class="skill__card card flex-column">
+                    <p class="skill__card-heading">
+                        UI/UX <br> DESIGN
+                    </p>
+                    <p class="skill__card-text">
+                        I specialize in designing attractive looking responsive web apps, mobile apps offering a
+                        great user experience.
+                    </p>
+                    <div class="skill__card-btn">
+                        <a href="#">View Work</a>
+                        <i class="fa fa-arrow-right fa-xs"></i>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- EDUCATION SECTION ENDS -->
+        </div>
+    </section>
+    <!-- SKILLS SECTION ENDS -->
 
-        <!-- CONTACT SECTION STARTS -->
-        <section class="contact container" id="contact">
+    <!-- EDUCATION SECTION STARTS -->
+    <section class="education container" id="education">
+        <div class="education__container child-container flex-column">
+            <div class="education__heading heading">
+                <h1>EDUCATION</h1>
+            </div>
+            <div class="education__cards-container flex">
+                <div class="education__card card flex-column">
+                    <p class="education__card-heading">
+                        <span class="degree">B.TECH</span>
+                        <span class="major">Computer Science Enginering</span>
+                    </p>
+                    <p class="education__card-text">
+                        <span class="clg">Vellore Institute of Technology</span>
+                        <span class="clg-loc">Vellore, Tamil Nadu</span>
+                        <span class="year">2020 - 2024</span>
+                    </p>
+                    <div class="education__card-gpa">
+                        <p>CGPA - 8.7</p>
+                    </div>
+                </div>
+                <div class="education__card card flex-column">
+                    <p class="education__card-heading">
+                        <span>CLASS 12TH</span>
+                        <span>CBSE Board</span>
+                    </p>
+                    <p class="education__card-text">
+                        <span>Pinewood School</span>
+                        <span>Saharanpur, Uttar Pradesh</span>
+                        <span class="year">2020</span>
+                    </p>
+                    <div class="education__card-percentage">
+                        <p>Percentage - 95.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EDUCATION SECTION ENDS -->
+
+    <!-- CONTACT SECTION STARTS -->
+    <section class="contact container" id="contact">
+        <div class="child-container">
             <div class="heading">
                 <h1>CONTACT</h1>
             </div>
-            <div class="contact__content">
-                <div class="contact__info">
+            <div class="contact__content flex">
+                <div class="contact__info flex-column">
                     <div class="info__img">
                         <img src="./Assets/Linked in dp-3.png" alt="abhishek image">
                     </div>
@@ -194,8 +196,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact-form__container">
-                    <form class="form">
+                <div class="contact-form__container flex">
+                    <form class="form flex-column">
                         <div class="form__field name">
                             <label for="name">Name: </label>
                             <input type="text" id="name" autocomplete="off">
@@ -208,14 +210,15 @@
                             <label for="message">Message: </label>
                             <textarea name="message" id="message" cols="30" rows="6"></textarea>
                         </div>
-                        <div class="form__btn cta__btn btn-hover">
+                        <div class="form__btn cta__btn btn-hover flex">
                             <a href="#">Send</a>
                         </div>
                     </form>
                 </div>
             </div>
-        </section>
-        <!-- CONTACT SECTION ENDS -->
+        </div>
+    </section>
+    <!-- CONTACT SECTION ENDS -->
     <!-- </main> -->
 
     <!-- FOOTER STARTS -->
