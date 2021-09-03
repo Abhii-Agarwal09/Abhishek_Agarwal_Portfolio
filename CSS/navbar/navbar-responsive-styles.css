@@ -1,12 +1,10 @@
 .active {
     transform: translateX(-100%);
     transition: all 0.5s ease;
+    opacity: 0.9;
 }
 
 @media all and (max-width: 1200px) {
-    body {
-        overflow-x: hidden;
-    }
     .navbar {
         position: relative;
     }
@@ -46,5 +44,16 @@
     }
     .btn-work {
         background-color: var(--secondary-color);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .button {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: space-around;
     }
 }
