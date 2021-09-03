@@ -13,7 +13,6 @@
     }
     .hero__image {
         height: 45%;
-        border: 5px solid red;
     }
     .hero__image img {
         height: 100%;
@@ -60,7 +59,6 @@
     }
     .contact-btn,
     .resume-btn {
-        border: 2px solid red;
         padding: 0.5rem 1rem;
     }
 }
@@ -78,7 +76,6 @@
     }
 
     .hero__info-about-text {
-        border: 2px solid red;
         width: 90%;
     }
     .hero__info-about-text .info__about-heading {
@@ -118,7 +115,6 @@
     }
 
     .hero__info-about-text {
-        border: 2px solid red;
         width: 100%;
     }
     .hero__info-about-text .info__about-heading {
