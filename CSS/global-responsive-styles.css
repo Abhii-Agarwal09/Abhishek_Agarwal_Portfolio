@@ -1,0 +1,6 @@
+@media all and (max-width: 1200px) {
+    .child-container {
+        width: 85%;
+        border: 2px solid green;
+    }
+}

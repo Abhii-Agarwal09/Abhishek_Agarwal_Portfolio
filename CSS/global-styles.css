@@ -18,6 +18,19 @@ body {
     overflow-x: hidden;
 }
 
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 4px 8px; 
+    color: var(--primary-color);
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 2px solid var(--primary-color);
+}
+
 :root {
     --primary-color: #3D59BF;
     --secondary-color: #F2A32C;
@@ -50,21 +63,15 @@ a {
 .container {
     border: 2px solid red;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1920px;
 }
 
 .child-container {
     border: 2px solid blue;
+    width: 100%;
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1300px; 
 }
-
-.card {
-    height: 400px;
-    width: 400px;
-    border: 2px solid green;
-}
-
 
 .flex {
     display: flex;
@@ -81,17 +88,73 @@ a {
 
 .btn {
     padding: 0.75rem 1.2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease;
     background-color: var(--primary-color);
-    border: 2px solid red;
+    border: 2px solid var(--primary-color);
 }
 
-.btn-hover {
-    border: 2px solid yellow;
+.btn-outline {
+    padding: 0.75rem 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
 }
 
 .btn-hover:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
     transition: all 0.3s ease;
+}
+
+.card {
+    height: 400px;
+    width: 400px;
+    border: 2px solid green;
+    position: relative;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1), 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+}
+
+.cards-container {
+    width: 100%;
+    flex: 1;
+    gap: 8rem;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 90%;
+}
+
+.card-heading {
+    text-align: center;
+    width: 300px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    border-top-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0;
 }

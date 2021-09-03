@@ -1,72 +1,30 @@
 .skills {
-    margin-top: 12rem;
+    margin-top: 3rem;
     height: 35rem;
-    height: 88vh;
+    height: 80vh;
 }
 
 .skills__container {
     height: 100%;
+    border: 2px solid blue;
 }
 
 .skills__heading h1 {
     text-align: center;
 }
 
-.skills__cards-container {
-    margin-top: 3rem;
-    width: 100%;
-    flex: 1;
-    gap: 8rem;
-}
-
 .skill__card {
-    position: relative;
     justify-content: space-around;
-    border-radius: 6px;
-    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1), 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
-}
-
-.skill__card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4rem;
-    height: 4rem;
-    background-color: var(--secondary-color);
-    z-index: -1;
-    border-top-right-radius: 0;
-    border-top-left-radius: 6px;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 0;
-}
-
-.skill__card:hover {
-    transform: translateY(-10px);
-    transition: 0.3s ease-in-out;
 }
 
 .skill__card-heading {
-    text-align: center;
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: var(--primary-color);
     border: 2px solid red;
-    width: 300px;
-}
-
-.skill__card-text {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    width: 90%;
+    font-size: 1.75rem;
 }
 
 .skill__card-btn {
     padding: 0.25rem 0.5rem;
-    border-radius: 6px;
+    border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
 

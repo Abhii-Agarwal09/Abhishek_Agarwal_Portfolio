@@ -5,6 +5,7 @@ const navListItems = document.querySelectorAll('.navbar__item');
 const navBtn = document.querySelector('.btn-work');
 const logo = document.querySelector('.logo-item');
 const logoWork = document.querySelector('.logo-work')
+const hamburger = document.querySelector('.fa-bars');
 
 const homeBtn = document.querySelector('#home-btn');
 const skillsBtn = document.querySelector('#skills-btn');
@@ -17,10 +18,9 @@ console.log(body.id);
 
 window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
-    // console.log(scroll);
-    console.log(logoWork)
 
     if (scroll > 0) {
+        hamburger.style.color = '#fff';
         navbar.classList.add('scrolled');
 
 
@@ -43,6 +43,7 @@ window.addEventListener('scroll', () => {
         }
 
     } else {
+        hamburger.style.color = 'var(--primary-color)';
         navbar.classList.remove('scrolled');
         navLinks.forEach(link => {
             link.classList.remove('navbar__items-scrolled')
@@ -88,7 +89,7 @@ if (body.id !== 'work-page') {
 
 
 // navbar animation 
-const hamburger = document.querySelector('.navbar-hamburger__container');
+
 
 hamburger.addEventListener('click', () => {
     const navList = document.querySelector('.navbar__list');
