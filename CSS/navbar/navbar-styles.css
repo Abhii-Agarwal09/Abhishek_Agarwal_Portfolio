@@ -89,11 +89,20 @@
 }
 
 .navbar-hamburger__container {
+    z-index: 1020;
     display: none;
 }
-.navbar-hamburger__container > i {
+
+.bars::before {
     color: var(--primary-color);
+    transition: all 0.3s ease;
 }
+
+.bars.scroll::before {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
 
 .scrolled {
     background-color: var(--primary-color);

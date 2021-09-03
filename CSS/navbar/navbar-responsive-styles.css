@@ -1,49 +1,45 @@
-/* .active {
-    transform: translate(-2000px, 0);
+.active {
+    transform: translateX(-100%);
     transition: all 0.5s ease;
-} */
+}
 
 @media all and (max-width: 1200px) {
     body {
         overflow-x: hidden;
     }
-    /* .navbar__logo {
-        margin-left: 3rem;
-    } */
-    .navbar__container {
+    .navbar {
         position: relative;
-        /* width: 100%; */
     }
     .navbar-hamburger__container {
         display: block;
         position: absolute;
         top: 50%;
-        right: 10px;
+        right: 20px;
         transform: translate(0, -50%);
-    }
-    .navbar-hamburger__container > i {
-        color: var(--primary-color);
+        z-index: 100;
     }
     .navbar__list {
         background-color: var(--primary-color);
         position: absolute;
-        top: 12vh;
+        top: 0vh;
         right: 0;
-        flex-direction: column;
         height: 100vh;
         width: 400px;
         z-index: 20;
-        align-items: center;
-        justify-content: space-between;
         padding: 10px 0;
-        transform: translateX(200%);
+        transform: translateX(100%);
         transition: all 0.5s ease;
+        display: block;
     }
     .navbar__list.active {
         transform: translateX(0%);
     }
     .navbar__item {
+        padding: 1rem 2rem;
+        margin: 6rem 1rem;
+        text-align: center;
         border: 2px solid red;
+        /* display: block; */
         color: #fff;
     }
     .navbar__link {

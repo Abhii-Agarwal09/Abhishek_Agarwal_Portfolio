@@ -5,7 +5,7 @@ const navListItems = document.querySelectorAll('.navbar__item');
 const navBtn = document.querySelector('.btn-work');
 const logo = document.querySelector('.logo-item');
 const logoWork = document.querySelector('.logo-work')
-const hamburger = document.querySelector('.fa-bars');
+const hamburger = document.querySelector('.bars');
 
 const homeBtn = document.querySelector('#home-btn');
 const skillsBtn = document.querySelector('#skills-btn');
@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
 
     if (scroll > 0) {
-        hamburger.style.color = '#fff';
+        // hamburger.style.color = '#fff';
         navbar.classList.add('scrolled');
 
 
@@ -41,9 +41,11 @@ window.addEventListener('scroll', () => {
         } else {
             logo.src = "./Assets/Logo-name-scrolled.svg"
         }
+        hamburger.classList.add('scroll')
+        
 
     } else {
-        hamburger.style.color = 'var(--primary-color)';
+        // hamburger.style.color = 'var(--primary-color)';
         navbar.classList.remove('scrolled');
         navLinks.forEach(link => {
             link.classList.remove('navbar__items-scrolled')
@@ -61,7 +63,7 @@ window.addEventListener('scroll', () => {
         } else {
             logo.src = "./Assets/Logo-name-normal.svg"
         }
-
+        hamburger.classList.remove('scroll')
         
     }
 })
@@ -91,7 +93,20 @@ if (body.id !== 'work-page') {
 // navbar animation 
 
 
+const navList = document.querySelector('.navbar__list');
 hamburger.addEventListener('click', () => {
-    const navList = document.querySelector('.navbar__list');
     navList.classList.toggle('active');
+    hamColor();
 })
+
+const hamColor = () => {
+    if (navList.classList.contains('active')) {
+        hamburger.classList.add('scroll');
+        hamburger.classList.remove('fa-bars');
+        hamburger.classList.add('fa-times');
+    }else {
+        hamburger.classList.remove('scroll');
+        hamburger.classList.add('fa-bars');
+        hamburger.classList.remove('fa-times');
+    }
+}
