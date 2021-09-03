@@ -1,4 +1,33 @@
 @media all and (max-width: 1200px) {
+    .education {
+        height: 100vh;
+    }
+    .education__container {
+        justify-content: space-between;
+    }
+    .education__cards-container {
+        border: 2px solid red;
+        flex: 0.9;
+    }
+    .education__card {
+        border: 2px solid cyan;
+        height: 450px;
+        width: 350px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .education__cards-container {
+        border: 2px solid green;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .education__card {
+        width: 420px;
+        height: 280px;
+    }
+}
+
+/* @media all and (max-width: 1200px) {
     .heading {
         font-size: 3rem;
     }
@@ -20,10 +49,10 @@
 @media all and (max-width: 1110px) {
     .education__cards-container {
         flex-direction: column;
-        /* border: 2px solid green; */
+        
     }
     .education__cards-container .education__card {
-        /* border: 2px solid red; */
+        
         height: 40%;
         width: 50%;
     }
@@ -67,4 +96,4 @@
     .education__cards-container .education__card {
         width: 100%;
     }
-}
+} */
