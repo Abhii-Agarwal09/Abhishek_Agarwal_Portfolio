@@ -65,6 +65,10 @@
     justify-content: space-around;
 }
 
+.info-list  li {
+    font-size: 1.5rem;
+}
+
 .contact-form__container {
     width: 50%;
 }

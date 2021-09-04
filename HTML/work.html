@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Agarwal | Work</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/global-styles.css">
+    <link rel="stylesheet" href="../CSS/global-responsive-styles.css">
     <link rel="stylesheet" href="../CSS/navbar/navbar-styles.css">
+    <link rel="stylesheet" href="../CSS/navbar/navbar-responsive-styles.css">
     <link rel="stylesheet" href="../CSS/work/work-styles.css">
+    <link rel="stylesheet" href="../CSS/footer/footer-styles.css">
 </head>
 
 <body id="work-page">
+    <div class="dummy-nav"></div>
     <!-- NAVBAR STARTS -->
-    <header class="navbar max-width">
-        <nav class="navbar__container">
+    <header class="navbar container">
+        <nav class="navbar__container child-container flex">
             <div class="navbar__logo">
-                <img src="../Assets/logo-name-normal.svg" alt="logo" class="logo-work">
+                <img src="../Assets/Logo-name-normal.svg" alt="logo" class="logo-work">
             </div>
             <ul class="navbar__list">
                 <li class="navbar__item">
@@ -28,10 +33,13 @@
                 <li class="navbar__item">
                     <a href="../index.html" class="navbar__link" id="education-btn">Education</a>
                 </li>
-                <li class="navbar__item btn btn-work btn-hover">
-                    <a href="./work.html" class="navbar__link">View work</a>
+                <li class="navbar__item btn-work last btn btn-hover">
+                    <a href="#" class="navbar__link">View work</a>
                 </li>
             </ul>
+            <div class="navbar-hamburger__container">
+                <i class="fas fa-bars bars"></i>
+            </div>
         </nav>
     </header>
     <!-- NAVBAR ENDS -->
@@ -55,7 +63,7 @@
                 <a href="#" class="link__github">View Github</a>
             </div>
         </div>
-        <div class="work__image">
+        <div class="work__image flex">
             <img src="../Assets/yelpcamp-final.png" alt="project yelcamp image">
         </div>
     </section>
@@ -63,7 +71,7 @@
 
     <!-- WORK SECTION STARTS -->
     <section class="work__container">
-        <div class="work__image">
+        <div class="work__image flex">
             <img src="../Assets/ultimate-final.png" alt="project ultimate fitness image">
         </div>
         <div class="work__info">
@@ -82,6 +90,45 @@
     </section>
     <!-- WORK SECTION STARTS -->
     <!-- WORK ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer class="footer container flex">
+        <div class="footer-child child-container flex">
+            <section class="footer__left">
+                <div class="footer__heading">
+                    <p>
+                        <i class="fas fa-copyright"></i>
+                        Abhishek Agarwal
+                    </p>
+                </div>
+            </section>
+            <section class="footer__middle">
+                <ul class="social__list">
+                    <li class="footer__link">
+                        <a href="https://github.com/Abhii-Agarwal09" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.linkedin.com/in/abhishek-agarwal-42b927201/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
     <script src="../Js/app.js"></script>
 </body>
 

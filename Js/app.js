@@ -13,7 +13,7 @@ const educationBtn = document.querySelector('#education-btn');
 
 const body = document.getElementsByTagName('body')[0];
 // console.log(body);
-// console.log(body.id);
+console.log(body.id);
 
 
 window.addEventListener('scroll', () => {
@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
 
         navBtn.classList.add('nav-btn-scrolled');
 
-        if (body.id === 'work-page') {
+        if (body.id == 'work-page') {
             logoWork.src = "../Assets/Logo-name-scrolled.svg"
         } else {
             logo.src = "./Assets/Logo-name-scrolled.svg"
