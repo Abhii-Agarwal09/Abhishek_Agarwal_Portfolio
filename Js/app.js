@@ -12,8 +12,8 @@ const skillsBtn = document.querySelector('#skills-btn');
 const educationBtn = document.querySelector('#education-btn');
 
 const body = document.getElementsByTagName('body')[0];
-console.log(body);
-console.log(body.id);
+// console.log(body);
+// console.log(body.id);
 
 
 window.addEventListener('scroll', () => {
@@ -70,22 +70,7 @@ window.addEventListener('scroll', () => {
 
 if (body.id !== 'work-page') {
     homeBtn.addEventListener('click', () => {
-        window.scroll(0, 0);
-        console.log(window.scrollY);
-    });
-    
-    skillsBtn.addEventListener('click', () => {
-        window.scroll(0, 720);
-        console.log(window.scrollY);
-    
-        // const skillSection = document.getElementById('skills');
-        // console.log(skillSection);
-        // skillSection.scrollIntoView();
-    });
-    
-    educationBtn.addEventListener('click', () => {
-        window.scrollBy(0, 1440);
-        console.log(window.scrollY);
+        window.scrollTo(0, 20);
     });
 }
 
@@ -110,3 +95,12 @@ const hamColor = () => {
         hamburger.classList.remove('fa-times');
     }
 }
+
+navListItems.forEach(item => {
+    item.addEventListener('click', () => {
+        if (navList.classList.contains('active')) {
+            navList.classList.remove('active');
+            hamColor();
+        }
+    })
+})
