@@ -11,11 +11,13 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: auto;
     overflow-x: hidden;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: auto;
     overflow-x: hidden;
 }
 
