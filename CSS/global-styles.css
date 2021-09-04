@@ -13,12 +13,15 @@ html {
     scroll-behavior: smooth;
     overflow: auto;
     overflow-x: hidden;
+    height: -webkit-fill-available;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: auto;
     overflow-x: hidden;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 input,
