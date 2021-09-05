@@ -73,3 +73,15 @@
         font-size: 0.8rem;
     }
 }
+
+/* landscape */
+
+@media all and (max-width: 1200px) and (orientation: landscape) {
+    .contact {
+        height: 185vh;
+    }
+
+    .contact__info-personal {
+        width: 80%;
+    }
+}

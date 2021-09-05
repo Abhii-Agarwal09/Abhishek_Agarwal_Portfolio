@@ -62,3 +62,29 @@
         width: 60%;
     }
 }
+
+/* landscape */
+
+@media all and (max-width: 1000px) and (orientation: landscape) {
+    .skills {
+        height: 185vh;
+    }
+    .skills__cards-container {
+        flex-direction: column;
+        gap: 2rem;
+        height: fit-content;
+    }
+    .skill__card {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) {
+    .skills {
+        height: 200vh;
+    }
+    .skills__container {
+        width: 95%;
+    }
+}
