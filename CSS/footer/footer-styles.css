@@ -1,9 +1,11 @@
 .footer {
     background-color: var(--primary-color);
     height: 10vh;
-    display: flex;
+}
+
+.footer-child {
+    width: 100%;
     justify-content: space-around;
-    align-items: center;
 }
 
 .footer__middle {
@@ -14,7 +16,6 @@
     font-size: 1.75rem;
     font-weight: 600;
     color: #fff;
-
 }
 
 .social__list {

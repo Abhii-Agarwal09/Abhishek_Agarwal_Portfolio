@@ -1,109 +1,74 @@
 @media all and (max-width: 1200px) {
     .contact {
-        height: 100vh;
-    }
-    .personal .personal__info {
-        font-size: 1.2rem;
-    }
-}
-
-@media all and (max-width: 950px) {
-    .contact__content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact__info,
-    .contact-form__container {
-        width: 80%;
-        height: 30%;
-    }
-
-    .contact-form__container {
-        height: 70%;
-    }
-
-    .contact__info {
-        flex-direction: row;
-        height: 35%;
-    }
-
-    .contact__info::after {
-        display: none;
-    }
-
-    .personal .personal__info {
-        font-size: 0.8rem;
-    }
-
-    .info__img {
-        height: 80%;
+        height: 60vh;
     }
 
     .contact__info-personal {
-        height: 100%;
-        justify-content: center;
-    }
-
-    .info-list a i {
-        font-size: 0.8rem;
-    }
-
-    .form {
-        height: 100%;
-        width: 90%;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .form__field {
-        height: 20%;
-        width: 100%;
-    }
-    .form__field labe {
-        padding: 4px 0;
-    }
-    .name,
-    .email {
-        width: 50%;
-    }
-    .message {
-        width: 100%;
-        height: 60%;
-    }
-    .message textarea {
-        width: 95%;
-    }
-    .contact-form-btn {
-        padding: 0.5rem 0.75rem;
+        width: 80%;
     }
 }
 
-@media all and (max-width: 650px) {
-    .contact textarea {
-        height: 5   0%;
+@media all and (max-width: 900px) {
+    .contact-child {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .contact__info-personal {
+        width: 100%;
     }
 
-    .info__img {
-        height: 45%;
+    .personal {
+        width: 100%;
     }
 
-    .personal .personal__info {
-        font-size: 0.5rem;
-        padding: 4px;
-    }
     .info-list {
         width: 80%;
     }
 
-    .info-list a i {
-        font-size: 0.5rem;
+    .personal__name {
+        font-size: 2rem;   
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+    
+    .personal__role {
+        font-size: 1rem;
+    }
+    
+    .personal__email {
+        font-size: 1.25rem;
     }
 }
 
 @media all and (max-width: 450px) {
-    .contact__info,
-    .contact-form__container {
-        width: 100%;
+    .personal__name {
+        font-size: 1.5rem;   
+        font-weight: bold;
+        color: var(--secondary-color);
     }
-} 
+    
+    .personal__role {
+        font-size: 0.8rem;
+    }
+    
+    .personal__email {
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 370px) {
+    .personal__name {
+        font-size: 1.3rem;   
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+    
+    .personal__role {
+        font-size: 0.6rem;
+    }
+    
+    .personal__email {
+        font-size: 0.8rem;
+    }
+}

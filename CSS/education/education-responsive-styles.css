@@ -1,6 +1,6 @@
 @media all and (max-width: 1200px) {
     .education {
-        height: 100vh;
+        height: 60vh;
     }
     .education__container {
         justify-content: space-between;

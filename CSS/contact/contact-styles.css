@@ -4,58 +4,23 @@
 }
 
 .contact .child-container {
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
-}
-
-.form-child {
-    justify-content: space-between;
-}
-
-.contact__content {
-    align-items: stretch;
-    width: 100%;
-    flex: 1;
-    max-height: 530px;
-}
-
-.contact__info {
-    justify-content: space-around;
-    width: 50%;
-    position: relative;
-    background-color: var(--primary-color);
-}
-
-.contact__info::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: -4px;
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary-color);
-    transform: rotate(45deg);
 }
 
 .contact__info-personal {
-    height: 45%;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 65%;
+    max-height: 400px;
+    width: 60%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
-.personal .personal__info {
+.personal__info {
     color: white;
-    font-size: 1.5rem;
     text-align: center;
     padding: 8px;
-}
-
-.info__img {
-    height: 40%;
-}
-
-.info__img img {
-    height: 100%;
-    width: 100%;
 }
 
 .info-list {
@@ -66,43 +31,19 @@
 }
 
 .info-list  li {
+    font-size: 1.75rem;
+}
+
+.personal__name {
+    font-size: 2.5rem;   
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.personal__role {
     font-size: 1.5rem;
 }
 
-.contact-form__container {
-    width: 50%;
-}
-
-.form {
-    height: 90%;
-    width: 90%;
-    justify-content: space-around;
-}
-
-.form__field {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-    width: 80%;
-}
-
-.form__field label {
-    padding: 8px 0;
-    display: block;
-}
-
-.form__field textarea {
-    border-radius: 6px;
-    resize: none;
-    border: 2px solid var(--primary-color);
-}
-
-.contact-form-btn {
-    padding: 0.75rem 2rem;
-    background-color: var(--secondary-color);
-    border: none;
-}
-.contact-form-btn a {
-    font-size: 20px;
-    color: var(--text-color);
+.personal__email {
+    font-size: 1.75rem;
 }
