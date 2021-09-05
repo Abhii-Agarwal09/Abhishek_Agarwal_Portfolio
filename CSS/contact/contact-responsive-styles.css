@@ -78,10 +78,12 @@
 
 @media all and (max-width: 1200px) and (orientation: landscape) {
     .contact {
-        height: 185vh;
+        height: 100vh;
     }
+}
 
-    .contact__info-personal {
-        width: 80%;
+@media all and (max-width: 768px) and (orientation: landscape) {
+    .contact {
+        height: 150vh;
     }
 }

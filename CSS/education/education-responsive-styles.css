@@ -56,29 +56,27 @@
 
 /* landscape */
 
+@media all and (max-width: 1200px) and (orientation: landscape) {
+    .education {
+        height: 85vh;
+    }
+}
+
 @media all and (max-width: 1000px) and (orientation: landscape) {
     .education {
         height: 185vh;
     }
-    .education__container {
-        width: 95%;
-    }
-    .education__cards-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .education__card {
-        width: 400px;
-        height: 250px;
-    }
 }
 
 @media all and (max-width: 768px) and (orientation: landscape) {
-
     .education {
-        height: 200vh;
+        height: 165vh;
     }
-    .education__container {
-        width: 95%;
+
+}
+
+@media all and (max-width: 650px) and (orientation: landscape) {
+    .education {
+        height: 230vh;
     }
 }
