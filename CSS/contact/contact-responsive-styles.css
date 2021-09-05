@@ -17,6 +17,7 @@
 @media all and (max-width: 768px) {
     .contact__info-personal {
         width: 100%;
+        border-radius: 0;
     }
 
     .personal {
