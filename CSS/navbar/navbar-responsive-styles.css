@@ -57,3 +57,17 @@
         justify-content: space-around;
     }
 }
+
+@media all and (max-width: 768px) and (orientation:landscape) {
+    .navbar__list {
+        overflow-y: scroll;
+    }
+    .button {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
