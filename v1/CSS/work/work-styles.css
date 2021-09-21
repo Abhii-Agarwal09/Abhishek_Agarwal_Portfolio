@@ -1,0 +1,80 @@
+h1 {
+    width: calc(100% - 240px);
+    max-width: 1920px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.logo-work {
+    transition: all 0.5s ease;
+    z-index: 65;
+}
+
+.work__container {
+    width: calc(100% - 240px);
+    margin: 3rem auto;
+    max-width: 1600px;
+    height: 25rem;
+    display: flex;
+    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1), 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.work__image {
+    width: 50%;
+    height: 100%;
+}
+
+.work__image img {
+    height: 100%;
+}
+
+.work__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.blue {
+    color: var(--primary-color);
+}
+
+.orange {
+    color: var(--secondary-color);
+}
+
+.work__description {
+    text-align: center;
+    width: 85%;
+    line-height: 1.75rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.work__links {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--primary-color);
+}
+
+.work__links a {
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.work__links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s ease;
+}

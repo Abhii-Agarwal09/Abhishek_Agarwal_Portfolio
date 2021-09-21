@@ -1,0 +1,49 @@
+.contact {
+    margin: 3rem auto;
+    height: 42rem;
+}
+
+.contact .child-container {
+    justify-content: center;
+    height: 100%;
+}
+
+.contact__info-personal {
+    justify-content: space-around;
+    height: 65%;
+    max-height: 400px;
+    width: 60%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.personal__info {
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.info-list {
+    padding: 8px;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-list  li {
+    font-size: 1.75rem;
+}
+
+.personal__name {
+    font-size: 2.5rem;   
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.personal__role {
+    font-size: 1.5rem;
+}
+
+.personal__email {
+    font-size: 1.75rem;
+}
