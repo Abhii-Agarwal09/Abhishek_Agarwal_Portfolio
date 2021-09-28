@@ -2,79 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek Agarwal | Portfolio</title>
-    <!-- Font awesome cdn -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!-- Stylesheets -->
 </head>
 
 <body>
-
     <!-- NAVBAR STARTS -->
-    <div class="dummy-nav"></div>
-    <header class="navbar container">
-        <nav class="navbar__container child-container flex">
-            <div class="navbar__logo">
-                <a href="./index.html"><img src="./Assets/Logo-name-normal.svg" alt="logo" class="logo-item"></a>
+    <header>
+        <nav class="container">
+            <div class="nav-logo">
+                <img src="./Assets/Logo-name-normal.svg" alt="Abhishek Agarwal name logo" />
             </div>
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="#" class="navbar__link" id="home-btn">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#skills" class="navbar__link" id="skills-btn">Skills</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#education" class="navbar__link" id="education-btn">Education</a>
-                </li>
-                <li class="navbar__item btn-work last btn btn-hover">
-                    <a href="./HTML/work.html" class="navbar__link">View work</a>
-                </li>
-            </ul>
-            <div class="navbar-hamburger__container">
-                <i class="fas fa-bars bars"></i>
+            <div class="nav-list--container">
+                <ul class="nav-list">
+                    <li class="nav-list--item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list--item">
+                        <a href="#" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-list--item">
+                        <a href="#" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-list--item">
+                        <a href="#" class="nav-link">View Work</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-hamburger--menu">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
     <!-- NAVBAR ENDS -->
 
-    <!-- HERO SECTION STARTS -->
-    <section class="hero container flex" id="home">
-        <div class="hero__container child-container">
-            <div class="hero__info">
-                <div class="hero__info-heading-container">
-                    <p class="info__heading-big-orange">WEB DESIGNER</p>
-                    <p class="info__heading-small-black">AND</p>
-                    <p class="info__heading-big-blue">FULL STACK DEVELOPER</p>
+    <!-- HOME SECTON STARTS -->
+    <main class="main-content">
+        <div class="container main-content--container">
+            <section class="main-info">
+                <div class="main-heading">
+                    <h2 class="heading heading-orange">Web designer</h2>
+                    <h2 class="heading heading-blue">
+                        Full stack developer
+                    </h2>
+                    <p>and</p>
                 </div>
-                <div class="hero__info-about-text">
-                    <p class="info__about-heading">Hey there!</p>
-                    <p class="info__about-text">
-                        Fueled by passion for designing and building compelling and attractive websites, I have a
-                        deep desire to excel and continuously improve myself. Learn more about me by going through
-                        my work and resume.
-                    </p>
+                <p class="main-body">
+                    Hey there! <br />
+                    Fueled by passion for designing and building compelling
+                    and attractive websites, I have a deep desire to excel
+                    and continuously improve myself. Learn more about me by
+                    going through my work and resume.
+                </p>
+                <div class="main-cta--container">
+                    <a href="#" class="btn btn-primary">Contact Me</a>
+                    <a href="" class="btn btn-secondary">Resume</a>
                 </div>
-                <div class="hero__info-cta flex">
-                    <div class="contact-btn btn btn-hover">
-                        <a href="#contact">Contact Me</a>
+            </section>
+            <section class="main-img">
+                <img src="./Assets/hero-image.png" alt="Abhishek Agarwal image" />
+            </section>
+        </div>
+    </main>
+    <!-- HOME SECTION ENDS -->
+
+    <!-- CONNECT WITH ME STARTS -->
+    <div class="contact-social--container">
+        <h3>Connect with me!</h3>
+        <div class="social-icon--container">
+            <a href="https://github.com/Abhii-Agarwal09" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abhishek-agarwal-42b927201/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <!-- CONNECT WITH ME ENDS -->
+
+    <!-- SKILLS SECTION STARTS -->
+    <section>
+        <div class="container">
+            <h2 class="heading">My Skills</h2>
+                <div class="skill-icon--container">
+                    <p class="icon">HTML</p>
+                    <p class="icon">CSS</p>
+                    <p class="icon">C++</p>
+                    <p class="icon">Java</p>
+                    <p class="icon">JavaScript</p>
+                    <p class="icon">NodeJs</p>
+                    <p class="icon">ExpressJs</p>
+                    <p class="icon">ReactJs</p>
+                    <p class="icon">MongoDB</p>
+                    <p class="icon">SQL</p>
+                </div>
+        </div>
+    </section>
+    <!-- SKILLS SECTION ENDS -->
+
+    <!-- EDUCATION SECTION STARTS -->
+    <section>
+        <div class="container">
+            <h2 class="heading">My Education</h2>
+            <div class="education-cards--container">
+                <div class="card">
+                    <h3 class="card-heading">B.Tech <br>Computer Science Engineering</h3>
+                    <div class="card-body">
+                        <p class="card-text--main">Vellore Institute of Technology</p>
+                        <p class="card-text--primary">Vellore, Tamil Nadu</p>
+                        <p class="card-text--secondary">2020 - 2024</p>
                     </div>
-                    <div class="resume-btn btn-outline btn-hover">
-                        <a href="#">Resume</a>
-                    </div>
+                    <p class="card-footer">CGPA - 8.7</p>
                 </div>
-            </div>
-            <div class="hero__image flex">
-                <img src="./Assets/hero-image-small.png" alt="hero-image">
+                <div class="card">
+                    <h3 class="card-heading">Class 12th <br>CBSE board</h3>
+                    <div class="card-body">
+                        <p class="card-text--main">Pinewood School</p>
+                        <p class="card-text--primary">Saharanpur, Uttar Pradesh</p>
+                        <p class="card-text--secondary">2018 - 2020</p>
+                    </div>
+                    <p class="card-footer">Percentage - 95.4%</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- HERO SECTION ENDS -->
+    <!-- EDUCATION SECTION ENDS -->
 
-    <!-- SKILLS SECTION STARTS -->
+    <!-- CONTACT SECTION STARTS -->
+    <section>
+        <div class="container">
+            <h2 class="heading">Contact Me</h2>
+            <p class="contact-text">Want to hire? Contact me now!</p>
+            <form action="#" class="contact-form">
+                <input type="text" class="form-field" placeholder="Enter your Name" required name="name" />
+                <input type="email" name="email" id="email" class="form-field" required
+                    placeholder="Enter your Email" />
+                <textarea name="message" id="message" cols="30" rows="10" class="form-field" required></textarea>
+                <a href="#" class="btn btn-primary btn-contact">Send Message</a>
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT SECTION ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="container">
+            <h2 class="heading">
+                <i class="fas fa-copyright"></i>
+                Abhishek Agarwal
+            </h2>
+            <div class="social-icon--container">
+                <a href="https://github.com/Abhii-Agarwal09" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-agarwal-42b927201/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+
+</html>
+
+<!-- 
     <section class="skills container" id="skills">
         <div class="skills__container child-container flex-column">
             <div class="skills__heading heading">
@@ -109,9 +216,7 @@
             </div>
         </div>
     </section>
-    <!-- SKILLS SECTION ENDS -->
 
-    <!-- EDUCATION SECTION STARTS -->
     <section class="education container" id="education">
         <div class="education__container child-container flex-column">
             <div class="education__heading heading">
@@ -149,84 +254,6 @@
             </div>
         </div>
     </section>
-    <!-- EDUCATION SECTION ENDS -->
-
-    <!-- CONTACT SECTION STARTS -->
-    <section class="contact container flex" id="contact">
-        <div class="child-container flex contact-child">
-            <div class="contact__info-personal flex-column">
-                <div class="personal">
-                    <p class="personal__name personal__info">ABHISHEK AGARWAL</p>
-                    <p class="personal__role personal__info">Full Stack Web Developer</p>
-                    <p class="personal__email personal__info"><span class="far fa-envelope"></span> abhishek.agarwal.work20@gmail.com</p>
-                </div>
-                <ul class="social__list info-list">
-                    <li class="social__link">
-                        <a href="https://github.com/Abhii-Agarwal09" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="social__link">
-                        <a href="https://www.linkedin.com/in/abhishek-agarwal-42b927201/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="social__link">
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social__link">
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT SECTION ENDS -->
-
-    <!-- FOOTER STARTS -->
-    <footer class="footer container flex">
-        <div class="footer-child child-container flex">
-            <section class="footer__left">
-                <div class="footer__heading">
-                    <p>
-                        <i class="fas fa-copyright"></i>
-                        Abhishek Agarwal
-                    </p>
-                </div>
-            </section>
-            <section class="footer__middle">
-                <ul class="social__list">
-                    <li class="footer__link">
-                        <a href="https://github.com/Abhii-Agarwal09">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="footer__link">
-                        <a href="https://www.linkedin.com/in/abhishek-agarwal-42b927201/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="footer__link">
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="footer__link">
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </footer>
-    <!-- FOOTER ENDS -->
-
     <script src="./Js/app.js"></script>
 </body>
-
-</html>
+</html> -->
