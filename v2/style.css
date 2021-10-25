@@ -19,6 +19,29 @@ a {
 }
 
 /* ==============================================
+            UTILITY CLASSES 
+================================================= */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+/* ==============================================
             TYPOGRAPHY 
 ================================================= */
 h3 {
@@ -52,6 +75,7 @@ h3 {
 
 .main-body {
     opacity: 0.75;
+    line-height: 1.6;
 }
 
 .card-heading {
@@ -80,16 +104,111 @@ h3 {
 /* BUTTON STYLES */
 .btn {
     font-size: 1.25rem;
-    padding: 0.75em 1.5em;
+    padding: 0.5em 1.5em;
     border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    /* margin-right: 1.25rem; */
 }
 
 .btn-primary {
     color: #fff;
     background-color: var(--primary-color);
 }
-
 .btn-secondary {
+    color: var(--primary-color); 
+}
+
+/* ==================================================
+            LAYOUT
+===================================================== */
+
+/* NAVBAR */
+
+header {
+    max-width: 2000px;
+    /* border: 2px solid red; */
+}
+
+.navbar {
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.nav-hamburger--menu {display: none;}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list--item {
+    padding: 0.75em 1.25em;
+    margin-left: 1.5em;
+}
+
+/* HOME */
+
+.main-content {
+    margin-top: 2rem;
+}
+
+.main-content--container {
+    align-items: stretch;
+    justify-content: center;
+}
+
+.main-info {
+    width: 55%;
+}
+
+.main-img {
+    width: 30%;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-orange {
+    order: 1;
+}
+
+.heading-blue {
+    order: 3;
+}
+
+.main-heading p {
+    order: 2;
+}
+
+.main-body,
+.main-cta--container {
+    width: 85%;
+    margin-top: 2rem;
+}
+
+.main-cta--container {
+    padding: 1.5rem 0;
+    display: flex;
+    gap: 2em;
+}
+
+/* CONNECT WITH ME */
+
+.contact-social--container {
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon--container * {
+    font-size: 2rem;
+    padding: 0.5em;
     color: var(--primary-color);
-    border: 2px solid var(--primary-color);
 }
