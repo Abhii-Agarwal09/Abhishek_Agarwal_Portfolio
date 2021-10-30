@@ -12,6 +12,11 @@ body {
     --primary-color: #3d59bf;
     --secondary-color: #f2a32c;
     --text-color: #070a0f;
+    --gradient: linear-gradient(
+        90deg,
+        rgba(255, 219, 58, 1) 0%,
+        rgba(255, 205, 128, 1) 100%
+    );
 }
 
 a {
@@ -39,6 +44,7 @@ a {
     align-items: center;
     max-width: 1920px;
     width: 100%;
+    padding: 3rem 0;
 }
 
 .container-column {
@@ -47,22 +53,22 @@ a {
 }
 
 .card {
-    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3em 1em;
-    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1), 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px -5px 20px 1px rgba(0, 0, 0, 0.1),
+        5px 5px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
     transition: 0.3s ease;
     max-width: 500px;
-    min-width: 350px;
+    min-width: 320px;
 }
 
 .card::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -76,8 +82,19 @@ a {
     border-bottom-left-radius: 0;
 }
 
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 7rem;
+}
+
 .section {
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+.color-primary {
+    color: var(--primary-color);
 }
 
 /* ==============================================
@@ -88,14 +105,18 @@ h3 {
 }
 
 .nav-link,
+.main-body,
+.heading {
+    color: var(--text-color);
+}
+
+.nav-link,
 .main-body {
     font-size: 1.25rem;
-    color: var(--text-color);
 }
 
 .heading {
     font-size: 2.5rem;
-    color: var(--text-color);
 }
 
 .heading-style {
@@ -103,65 +124,55 @@ h3 {
     position: relative;
 }
 
-.heading-style::before {
-    content: "";
+.heading-style::before,
+.heading-style:hover::before,
+.heading-style::after,
+.heading-style:hover::after {
+    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: var(--secondary-color); */
-    background: linear-gradient(90deg, rgba(255,219,58,1) 0%, rgba(255,205,128,1) 100%);
     z-index: -10;
-    transform: skewX(-20deg);
     transition: 0.3s ease;
+}
+
+.heading-style::before,
+.heading-style:hover::before,
+.heading-style:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+.heading-style::before,
+.heading-style:hover::before {
+    background: var(--gradient);
+}
+
+.heading-style::after,
+.heading-style:hover::after {
+    border: 2px solid var(--text-color);
+}
+
+.heading-style::before {
+    transform: skewX(-20deg);
 }
 
 .heading-style:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(255,219,58,1) 0%, rgba(255,205,128,1) 100%);
-    z-index: -10;
     transform: skewX(0deg);
-    transition: 0.3s ease;
 }
 
 .heading-style::after {
-    content: "";
-    position: absolute;
     top: 3px;
     left: 3px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--text-color);
-    z-index: -10;
     transform: skewX(-20deg);
-    transition: 0.3s ease;
 }
 
 .heading-style:hover::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--text-color);
-    z-index: -10;
     transform: skewX(0deg);
-    transition: 0.3s ease;
 }
 
 .heading-orange {
     color: var(--secondary-color);
-}
-
-.heading-blue {
-    color: var(--primary-color);
 }
 
 .main-heading > p {
@@ -176,18 +187,15 @@ h3 {
 }
 
 .card-heading {
-    color: var(--primary-color);
     font-weight: 700;
     text-align: center;
 }
 
 .card-text--main,
 .card-text--primary {
-    color: var(--primary-color);
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
-
 }
 
 .card-text--main {
@@ -204,11 +212,19 @@ h3 {
 
 .card-footer,
 .card-footer a {
-    color: var(--primary-color);
+    padding: 0.5em 0.75em;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.card-footer a:focus,
+.card-footer a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .card-footer {
-    margin-top: 2.25rem
+    margin-top: 2.25rem;
 }
 
 /* BUTTON STYLES */
@@ -217,15 +233,11 @@ h3 {
     padding: 0.5em 1.5em;
     border-radius: 4px;
     border: 2px solid var(--primary-color);
-    /* margin-right: 1.25rem; */
 }
 
 .btn-primary {
     color: #fff;
     background-color: var(--primary-color);
-}
-.btn-secondary {
-    color: var(--primary-color);
 }
 
 /* ==================================================
@@ -236,11 +248,9 @@ h3 {
 
 header {
     max-width: 2000px;
-    /* border: 2px solid red; */
 }
 
 .navbar {
-    /* border: 2px solid blue; */
     justify-content: space-between;
     padding: 0 1.5rem;
 }
@@ -262,6 +272,13 @@ header {
 
 .main-content {
     margin-top: 2rem;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.main-content.active {
+    opacity: 1;
+    transform: 1s ease;
 }
 
 .main-content--container {
@@ -317,28 +334,13 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin-top: 5rem;
 }
 
 .social-icon--container * {
     font-size: 2rem;
     padding: 0.5em;
     color: var(--primary-color);
-}
-
-/* SKILLS SECTION */
-.skill-cards--container {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-top: 2.5rem;
-}
-
-/* EDUCATION SECTION */
-.education-cards--container {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-top: 2.5rem;
 }
 
 /* CONTACT SECTION */
@@ -382,16 +384,16 @@ textarea:focus {
     color: var(--text-color);
     margin-top: 1.25rem;
     text-align: center;
-    background: linear-gradient(90deg, rgba(255,219,58,1) 0%, rgba(255,205,128,1) 100%);
+    background: var(--gradient);
 }
 
 /* FOOTER SECTION */
 
 footer {
-    margin-top: 5rem;
+    margin-top: 3rem;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 1em;
+    padding: 1rem;
 }
 
 footer .social-icon--container * {
@@ -400,6 +402,7 @@ footer .social-icon--container * {
 }
 
 footer > .container {
+    padding: 0;
     gap: 2.5rem;
 }
 
