@@ -93,9 +93,7 @@ a {
     margin-top: 3rem;
 }
 
-.color-primary {
-    color: var(--primary-color);
-}
+
 
 /* ==============================================
             TYPOGRAPHY 
@@ -227,17 +225,27 @@ h3 {
     margin-top: 2.25rem;
 }
 
+.color-primary {
+    color: var(--primary-color);
+}
+
 /* BUTTON STYLES */
 .btn {
     font-size: 1.25rem;
     padding: 0.5em 1.5em;
     border-radius: 4px;
     border: 2px solid var(--primary-color);
+    transition: 0.3s ease;
 }
 
 .btn-primary {
     color: #fff;
     background-color: var(--primary-color);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.03);
 }
 
 /* ==================================================
@@ -266,6 +274,34 @@ header {
 .nav-list--item {
     padding: 0.75em 1.25em;
     margin-left: 1.5em;
+    position: relative;
+}
+
+.nav-list--item::before,
+.nav-list--item:hover::before,
+.nav-list--item:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translate(-50%, 0);
+    transform-origin: left;
+    transition: 0.3s ease;
+}
+
+.nav-list--item::before {
+    width: 0;
+}
+
+.nav-list--item:hover::before {
+    width: 70%;
+}
+
+.nav-list--item:hover .nav-link {
+    color: var(--primary-color);
+    transition: 0.3s ease;
 }
 
 /* HOME */
@@ -337,10 +373,29 @@ header {
     margin-top: 5rem;
 }
 
-.social-icon--container * {
+.contact-social--container .social-icon--container {
+    margin-top: 2.5rem;
+}
+
+.social-icon--container i {
     font-size: 2rem;
-    padding: 0.5em;
+    padding: 0.25em;
+    margin: 0 0.5em;
+    border-radius: 6px;
     color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.social-icon--container i:hover,
+.social-icon--container i:focus {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* SKILL SECTION */
+.skill .card-text--main {
+    border: 2px solid red;
+    width: 80%;
 }
 
 /* CONTACT SECTION */
