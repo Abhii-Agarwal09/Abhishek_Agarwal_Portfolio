@@ -91,6 +91,8 @@ a {
 
 .section {
     margin-top: 3rem;
+    opacity: 0;
+    transition: 1s ease;
 }
 
 
@@ -256,6 +258,7 @@ h3 {
 
 header {
     max-width: 2000px;
+    /* background-color: var(--primary-color); */
 }
 
 .navbar {
@@ -371,6 +374,8 @@ header {
     justify-content: center;
     gap: 1rem;
     margin-top: 5rem;
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .contact-social--container .social-icon--container {
@@ -394,7 +399,6 @@ header {
 
 /* SKILL SECTION */
 .skill .card-text--main {
-    border: 2px solid red;
     width: 80%;
 }
 
@@ -463,4 +467,9 @@ footer > .container {
 
 .footer-heading {
     font-size: 2.5rem;
+}
+
+
+.active {
+    opacity: 1;
 }
