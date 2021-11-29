@@ -12,10 +12,10 @@ body {
     --primary-color: #3d59bf;
     --secondary-color: #f2a32c;
     --text-color: #070a0f;
-    --gradient: linear-gradient(
-        90deg,
-        rgba(255, 219, 58, 1) 0%,
-        rgba(255, 205, 128, 1) 100%
+    --gradient: radial-gradient(
+        circle,
+        rgba(61, 89, 191, 0.8) 0%,
+        rgba(61, 89, 191, 1) 100%
     );
 }
 
@@ -95,8 +95,6 @@ a {
     transition: 1s ease;
 }
 
-
-
 /* ==============================================
             TYPOGRAPHY 
 ================================================= */
@@ -120,8 +118,10 @@ h3 {
 }
 
 .heading-style {
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
     position: relative;
+    transition: 0.3s ease;
+    color: #fff;
 }
 
 .heading-style::before,
@@ -148,10 +148,10 @@ h3 {
     background: var(--gradient);
 }
 
-.heading-style::after,
+/* .heading-style::after,
 .heading-style:hover::after {
     border: 2px solid var(--text-color);
-}
+} */
 
 .heading-style::before {
     transform: skewX(-20deg);
@@ -169,6 +169,11 @@ h3 {
 
 .heading-style:hover::after {
     transform: skewX(0deg);
+}
+
+.heading-style:hover {
+    font-style: italic;
+    transition: 0.3s ease;
 }
 
 .heading-orange {
@@ -468,7 +473,6 @@ footer > .container {
 .footer-heading {
     font-size: 2.5rem;
 }
-
 
 .active {
     opacity: 1;
